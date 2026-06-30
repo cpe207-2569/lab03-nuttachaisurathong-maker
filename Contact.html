@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .portfolio-bg {
+        background: linear-gradient(
+          135deg,
+          rgba(6, 182, 212, 0.05) 0%,
+          rgb(176, 255, 235) 50%,
+          rgba(52, 211, 153, 0.05) 100%
+        );
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="portfolio-bg">
+    <div
+      class="flex justify-center w-full max-w-max mx-auto bg-white p-1 rounded-2xl shadow-xl"
+    >
+      <ul
+        class="menu menu-horizontal rounded-box menu-lg font-bold text-gray-700"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="flex items-center gap-3 px-5 justify-center no-underline"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Homepage
+          </a>
+        </li>
+        <li>
+          <a
+            href="Favorites.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Favorites
+          </a>
+        </li>
+        <li>
+          <a
+            href="Gallery.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Gallery
+          </a>
+        </li>
+        <li>
+          <a
+            href="Contact.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container mx-auto px-4 py-12 font-sans">
+      <h2
+        class="text-3xl md:text-4xl font-extrabold text-center mb-12 tracking-tight"
+      >
+        <span
+          class="bg-gradient-to-r from-cyan-500 to-emerald-400 bg-clip-text text-transparent"
+        >
+          Contact Me
+        </span>
+      </h2>
+
+      <div
+        class="card card-side flex-col md:flex-row bg-base-100 shadow-xl border border-base-200 overflow-hidden rounded-3xl max-w-4xl mx-auto hover:shadow-2xl transition-all duration-300"
+      >
+        <div
+          class="flex items-center justify-center p-8 bg-base-200/50 md:w-2/5 min-w-[280px]"
+        >
+          <div class="avatar">
+            <div
+              class="w-48 h-48 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden shadow-md"
+            >
+              <img src="My photo.jpg" alt="My photo" class="object-cover" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body p-6 md:p-8 md:w-3/5 justify-center">
+          <div class="mb-4">
+            <h3
+              class="text-2xl font-bold text-base-content flex items-center gap-2"
+            >
+              Nuttachai Surathong
+              <span class="badge badge-primary font-semibold text-xs py-2"
+                >Ball</span
+              >
+            </h3>
+            <p class="text-sm text-base-content/60 mt-1">
+              Computer Engineering Student
+            </p>
+          </div>
+
+          <div class="divider my-2 opacity-50"></div>
+
+          <div class="space-y-4 text-sm md:text-base">
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-4">
+              <span class="font-bold text-base-content/70 sm:text-right"
+                >Address:</span
+              >
+              <span class="sm:col-span-3 text-base-content/90 leading-relaxed">
+                115/358, Tambon San Pong, Amphoe Mae Rim, Chiang Mai, 50180
+              </span>
+            </div>
+
+            <!-- Facebook -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-4 items-center"
+            >
+              <span class="font-bold text-base-content/70 sm:text-right"
+                >Facebook:</span
+              >
+              <div class="sm:col-span-3">
+                <a
+                  href="https://www.facebook.com/0iBalli0/"
+                  target="_blank"
+                  class="inline-flex items-center gap-1.5 text-primary hover:text-emerald-400 hover:underline transition-all font-medium"
+                >
+                  <span>Nuttachai Surathong (ฺBall)</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-4 gap-1 sm:gap-4 items-center"
+            >
+              <span class="font-bold text-base-content/70 sm:text-right"
+                >Email:</span
+              >
+              <div class="sm:col-span-3">
+                <a
+                  href="mailto:Nuttachai_Surathong@cmu.ac.th"
+                  class="inline-flex items-center gap-1.5 text-primary hover:text-emerald-400 hover:underline transition-all font-medium"
+                >
+                  <span>Nuttachai_Surathong@cmu.ac.th</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-4 h-4"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>

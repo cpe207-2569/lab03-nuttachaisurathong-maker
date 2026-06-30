@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .portfolio-bg {
+        background: linear-gradient(
+          135deg,
+          rgba(6, 182, 212, 0.05) 0%,
+          rgb(176, 255, 235) 50%,
+          rgba(52, 211, 153, 0.05) 100%
+        );
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="portfolio-bg">
+    <div
+      class="flex justify-center w-full max-w-max mx-auto bg-white p-1 rounded-2xl shadow-xl"
+    >
+      <ul
+        class="menu menu-horizontal rounded-box menu-lg font-bold text-gray-700"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="flex items-center gap-3 px-5 justify-center no-underline"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Homepage
+          </a>
+        </li>
+        <li>
+          <a
+            href="Favorites.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Favorites
+          </a>
+        </li>
+        <li>
+          <a
+            href="Gallery.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Gallery
+          </a>
+        </li>
+        <li>
+          <a
+            href="Contact.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container mx-auto px-4 py-12 font-sans">
+      <h2
+        class="text-3xl md:text-4xl font-extrabold text-center mb-12 tracking-tight"
+      >
+        <span
+          class="bg-gradient-to-r from-cyan-500 to-emerald-400 bg-clip-text text-transparent"
+        >
+          My Gallery
+        </span>
+      </h2>
+
+      <div
+        class="flex flex-wrap items-start justify-start gap-5 max-w-6xl mx-auto"
+      >
+        <div
+          class="card w-full md:w-[240px] bg-base-100 shadow-xl border border-base-200 overflow-hidden rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <figure class="w-full">
+            <img
+              src="The Spark for Computer Engineering.jpg"
+              alt="The Spark for Computer Engineering"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body p-4">
+            <h3 class="card-title text-base font-bold text-base-content">
+              The Spark for Computer Engineering
+            </h3>
+            <p class="text-xs text-base-content/70">
+              An MBTI personality test result revealing my profile as an INTJ,
+              which indicates a creative, structured mindset, and highly
+              tech-savvy programming potential. Discovering these core traits
+              was a pivotal spark that inspired my decision to pursue a degree
+              in Computer Engineering.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card w-full md:w-[240px] bg-base-100 shadow-xl border border-base-200 overflow-hidden rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <figure class="w-full">
+            <img
+              src="First Sunset at Ang Kaew.jpg"
+              alt="First Sunset at Ang Kaew"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body p-4">
+            <h3 class="card-title text-base font-bold text-base-content">
+              First Sunset at Ang Kaew
+            </h3>
+            <p class="text-xs text-base-content/70">
+              Capturing the breathtaking view of Ang Kaew Reservoir at Chiang
+              Mai University during a serene sunset. The stunning gradient of
+              the twilight sky reflecting off the gentle ripples of the water
+              made my first visit to this iconic campus spot absolutely
+              unforgettable.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card w-full md:w-[240px] bg-base-100 shadow-xl border border-base-200 overflow-hidden rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <figure class="h-44">
+            <img
+              src="Early Graphic Design Experiment.jpg"
+              alt="Early Graphic Design Experiment"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body p-4">
+            <h3 class="card-title text-base font-bold text-base-content">
+              Early Graphic Design Experiment
+            </h3>
+            <p class="text-xs text-base-content/70">
+              One of my earliest graphic design experiments, focusing on text
+              effect manipulation. The design composition features bold,
+              metallic gothic-style typography reading 'IronBlood' coated with
+              subtle blood splatters, set against a dark, heavily textured
+              concrete background with dramatic red lighting accents.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card w-full md:w-[240px] bg-base-100 shadow-xl border border-base-200 overflow-hidden rounded-3xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+        >
+          <figure class="h-44">
+            <img
+              src="First Steps into AI Generation.jpg"
+              alt="First Steps into AI Generation"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body">
+            <h3 class="card-title text-base font-bold text-base-content">
+              First Steps into AI Generation
+            </h3>
+            <p class="text-xs text-base-content/70">
+              A vibrant digital artwork featuring a glossy blue slime creature
+              nestled on a patch of lush green moss. This piece holds a special
+              place in my tech journey as it marks my very first experience
+              experimenting with AI generation tools to bring creative concepts
+              to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>

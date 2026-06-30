@@ -1,9 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .portfolio-bg {
+        background: linear-gradient(
+          135deg,
+          rgba(6, 182, 212, 0.05) 0%,
+          rgb(176, 255, 235) 50%,
+          rgba(52, 211, 153, 0.05) 100%
+        );
+        min-height: 100vh;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="portfolio-bg">
+    <div
+      class="flex justify-center w-full max-w-max mx-auto bg-white p-1 rounded-2xl shadow-xl"
+    >
+      <ul
+        class="menu menu-horizontal rounded-box menu-lg font-bold text-gray-700"
+      >
+        <li>
+          <a
+            href="index.html"
+            class="flex items-center gap-3 px-5 justify-center no-underline"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Homepage
+          </a>
+        </li>
+        <li>
+          <a
+            href="Favorites.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Favorites
+          </a>
+        </li>
+        <li>
+          <a
+            href="Gallery.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Gallery
+          </a>
+        </li>
+        <li>
+          <a
+            href="Contact.html"
+            class="flex items-center px-5 justify-center no-underline"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- แนะนำตัวเอง -->
+    <div
+      class="card lg:card-side bg-base-100 shadow-xl max-w-3xl mx-auto border border-base-200 overflow-hidden my-8"
+    >
+      <div
+        class="flex justify-center items-center p-6 lg:p-8 bg-gradient-to-br from-base-200 to-base-100 lg:w-1/3"
+      >
+        <div class="avatar online">
+          <div
+            class="w-32 h-32 md:w-40 md:h-40 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 shadow-inner"
+          >
+            <img
+              src="My photo.jpg"
+              alt="Nuttachai Surathong"
+              class="object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body lg:w-2/3 justify-center">
+        <div>
+          <h2
+            class="card-title text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-500 to-emerald-400 bg-clip-text text-transparent"
+          >
+            Nuttachai Surathong
+          </h2>
+          <div
+            class="text-primary hover:text-primary-focus transition-colors underline"
+          >
+            <a href="https://www.cpe.eng.cmu.ac.th/">Computer Engineering</a>
+            •
+            <a href="https://www.cmu.ac.th/">CMU</a>
+          </div>
+        </div>
+
+        <p
+          class="text-base-content/80 text-sm md:text-base leading-relaxed mt-4"
+        >
+          Hello everyone. My name is Nuttachai, and you can call me Ball. I am
+          currently a second-year undergraduate student at Chiang Mai
+          University. In my leisure time, I enjoy reading, listening to music,
+          and playing video games. I also have a passion for exploring diverse
+          cuisines, which brings me great joy. Characterized as a friendly and
+          responsible individual, I am always eager to learn new things and
+          continuously pursue self-improvement. Thank you for your time, and it
+          is a pleasure to meet you all.
+        </p>
+
+        <div class="card-actions justify-start mt-4 gap-2">
+          <div class="badge badge-md badge-neutral gap-1">🎬 Movies</div>
+          <div class="badge badge-md badge-neutral gap-1">🎵 Music</div>
+          <div class="badge badge-md badge-neutral gap-1">📚 Books</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- skill -->
+    <div class="container mx-auto px-4 py-12 font-sans">
+      <h2 class="text-3xl font-extrabold text-center mb-12 tracking-tight">
+        <span
+          class="bg-gradient-to-r from-cyan-500 to-emerald-400 bg-clip-text text-transparent"
+        >
+          Skills
+        </span>
+      </h2>
+
+      <div class="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
+        <div
+          class="rounded-3xl card card-side bg-base-100 shadow-xl border border-base-200 overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+        >
+          <figure class="w-1/3 min-w-[200px]">
+            <img
+              src="Programming.jpg"
+              alt="Programming"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body w-2/3 justify-center p-8">
+            <h3 class="card-title text-2xl font-bold text-base-content mb-3">
+              Programming
+            </h3>
+            <p class="text-base-content/80 text-lg leading-relaxed">
+              I possess foundational programming skills and am continuously
+              dedicated to improving my coding capabilities.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-3xl card card-side bg-base-100 shadow-xl border border-base-200 overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+        >
+          <figure class="w-1/3 min-w-[200px]">
+            <img
+              src="Graphic Design.jpg"
+              alt="Graphic Design"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body w-2/3 justify-center p-8">
+            <h3 class="card-title text-2xl font-bold text-base-content mb-3">
+              Graphic Design
+            </h3>
+            <p class="text-base-content/80 text-lg leading-relaxed">
+              I have hands-on experience in creating visual assets and graphic
+              designs for various projects.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-3xl card card-side bg-base-100 shadow-xl border border-base-200 overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+        >
+          <figure class="w-1/3 min-w-[200px]">
+            <img
+              src="Creative Design.jpg"
+              alt="Dev Ops"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body w-2/3 justify-center p-8">
+            <h3 class="card-title text-2xl font-bold text-base-content mb-3">
+              Creative Design
+            </h3>
+            <p class="text-base-content/80 text-lg leading-relaxed">
+              I have a strong passion for designing creative content that is
+              visually compelling and engaging.
+            </p>
+          </div>
+        </div>
+        <div
+          class="rounded-3xl card card-side bg-base-100 shadow-xl border border-base-200 overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+        >
+          <figure class="w-1/3 min-w-[200px]">
+            <img
+              src="English Communication.jpg"
+              alt="Dev Ops"
+              class="h-full w-full object-cover"
+            />
+          </figure>
+          <div class="card-body w-2/3 justify-center p-8">
+            <h3 class="card-title text-2xl font-bold text-base-content mb-3">
+              English Communication
+            </h3>
+            <p class="text-base-content/80 text-lg leading-relaxed">
+              I am capable of communicating in English at an intermediate level,
+              covering both basic and professional interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
 </html>
